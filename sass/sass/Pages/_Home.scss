@@ -1,0 +1,246 @@
+body {
+    background: $white;
+
+    h1 {
+        background: linear-gradient(to bottom, $mc, $mc2);
+        font-size: 1.75rem;
+        text-align: center;
+        padding: 18px 0;
+        color: #fff;
+        text-shadow: .5px .5px 3px $black;
+
+        font-size: 1.45rem;
+        padding: 16px 0;
+
+        @media (min-width: 768px) {
+            font-size: 1.75rem;
+            padding: 18px 0;
+        }
+
+    }
+
+    .container {
+        display: flex;
+        gap: 35px;
+        padding: 15px;
+        flex-wrap: wrap;
+
+        @media screen and (min-width:768px) {
+            flex-wrap: nowrap;
+            padding: 30px;
+        }
+
+        .weather-input {
+
+            width: 100%;
+
+            @media screen and (min-width:768px) {
+                width: 450px;
+            }
+
+            @media screen and (min-width:992px) {
+                width: 550px;
+            }
+
+
+
+            input {
+                height: 46px;
+                width: 100%;
+                outline: none;
+                font-size: 1.07rem;
+                padding: 0 17px;
+                margin: 10px 0 20px 0;
+                text-transform: capitalize;
+                border-radius: 4px;
+                border: 2px solid #ccc;
+
+
+                &:focus {
+                    padding: 0 17px;
+                    border: 2px solid $mc2;
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 10px 0;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                border-radius: 4px;
+                font-size: 1rem;
+                color: #fff;
+                background: linear-gradient(to right bottom, $mc, $mc2);
+                transition: 0.2s ease;
+
+
+                &:hover {
+                    @extend .hvr-wobble-skew;
+                }
+            }
+
+            .location-btn {
+                // background: linear-gradient(to right bottom, $mc2, pink);
+                // background-image: linear-gradient(to right, #8e44ad, #f1c40f);
+
+                border: 2px solid $mc;
+                color: $mc;
+                background: $white !important;
+                font-weight: bold;
+
+
+            }
+
+
+
+
+            .separator {
+                height: 1px;
+                width: 100%;
+                margin: 25px 0;
+                background: rgba($color: $mc2, $alpha: 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &::after {
+                    content: "or";
+                    color: rgba($color: $mc2, $alpha: .90);
+                    font-size: 1.18rem;
+                    padding: 0 15px;
+                    margin-top: -4px;
+                    background: $white;
+                }
+
+            }
+        }
+
+        .weather-data {
+            width: 100%;
+
+            .current-weather {
+                // color: #fff;
+                // background: linear-gradient(to bottom, $mc, $mc2);
+                color: $black;
+                background: linear-gradient(to bottom, rgba($mc, 20%), rgba($mc2, 20%));
+                border-radius: 5px;
+
+                display: flex;
+                justify-content: space-between;
+
+                box-shadow: 0px 0px 5px 0px rgba($color: $mc, $alpha: 1.0);
+                padding: 20px;
+
+                @media screen and (min-width:1400px) {
+                    padding: 20px 70px 20px 20px;
+                }
+
+                .details {
+                    h2 {
+                        font-weight: 700;
+                        font-size: 1.35rem;
+
+                        @media screen and (min-width:768px) {
+                            font-size: 1.7rem;
+                        }
+                    }
+
+                    h6 {
+                        margin-top: 12px;
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .icon {
+                    text-align: center;
+
+                    img {
+                        max-width: 120px;
+                        margin-top: -15px;
+                    }
+
+                    h4 {
+                        margin-top: -10px;
+                        text-transform: capitalize;
+                    }
+
+                }
+
+
+            }
+
+
+            .days-forecast {
+                h2 {
+                    margin: 20px 0;
+                    font-size: 1.5rem;
+                }
+
+                .weather-cards {
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+
+                    @media screen and (min-width:1400px) {
+                        flex-wrap: nowrap;
+                    }
+
+                    .card {
+                        padding: 18px 16px;
+                        list-style: none;
+
+                        color: $black;
+                        background: linear-gradient(to bottom, rgba($mc, 20%), rgba($mc2, 20%));
+                        border-radius: 5px;
+                        text-align: center;
+
+                        min-width: calc(100%);
+
+                        box-shadow: 0px 0px 5px 0px rgba($color: $mc, $alpha: 1.0);
+
+
+                        @media screen and (min-width:335px) {
+                            min-width: calc(100% / 2 - 10px);
+                        }
+
+                        @media screen and (min-width:992px) {
+                            min-width: calc(100% / 3 - 15px);
+                        }
+
+                        @media screen and (min-width:1200px) {
+                            min-width: calc(100% / 4 - 15px);
+                        }
+
+                        @media screen and (min-width:1400px) {
+                            min-width: calc(100% / 5 - 16px);
+                        }
+
+
+
+                        h3 {
+                            font-size: 1.3rem;
+                            font-weight: 600;
+
+                        }
+
+                        img {
+                            max-width: 70px;
+                            margin: 5px 0 -12px 0;
+                        }
+
+                        h6 {
+                            margin-bottom: 3px;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+}

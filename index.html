@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<title>Weather Forecast App | JavaScript App</title>
+
+		<link rel="icon" href="img/logo.png">
+
+		<meta name="description"
+			content='A weather app that allows users to get the weather forecast by entering a city name in the search input field or accessing the current location weather details with the "Use Current Location" button. Provides information on temperature, wind speed, humidity, and more.
+			'>
+
+		<meta name="keywords"
+			content="Weather app, forecast, current location, wind speed, weather, city, temperature, wind, humidity, TypeScript, SCSS">
+
+		<meta name="theme-color" content="#610b90">
+
+		<link rel="stylesheet" type="text/css" href="css/loader.css" media="all">
+		<link rel="stylesheet" type="text/css" href="css/home.css" media="all">
+
+		<!-- <link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<div id="loadingDiv">
+			<div class="loader">Loading...</div>
+		</div>
+
+		<!-- باقي اقسام الموقع -->
+		<div id="body">
+			<h1>Weather Dashboard</h1>
+			<div class="container">
+
+				<div class="weather-input">
+
+					<h3>Enter a City Name</h3>
+
+					<input class="city-input" type="text"
+						placeholder="E.g. : Baghdad, Aleppo, Dubai">
+
+					<button class="search-btn">Search</button>
+
+					<span class="separator"></span>
+
+					<button class="location-btn">Use Current Location</button>
+
+				</div>
+
+				<div class="weather-data">
+
+					<div class="current-weather">
+						<div class="details">
+							<h2>_______ : ______ </h2>
+							<h6>Temperature: __°C</h6>
+							<h6>Wind: __ M/S</h6>
+							<h6>Humidity: __%</h6>
+						</div>
+						<!-- here we will add using js : .div.icon (img + h4) -->
+					</div>
+
+					<div class="days-forecast">
+						<h2 class="black-color">5-Day Forecast</h2>
+						<ul class="weather-cards">
+							<li class="card">
+								<h3> ______ </h3>
+								<h6>Temp: __C</h6>
+								<h6>Wind: __ M/S</h6>
+								<h6>Humidity: __%</h6>
+							</li>
+							<li class="card">
+								<h3> ______ </h3>
+								<h6>Temp: __C</h6>
+								<h6>Wind: __ M/S</h6>
+								<h6>Humidity: __%</h6>
+							</li>
+							<li class="card">
+								<h3> ______ </h3>
+								<h6>Temp: __C</h6>
+								<h6>Wind: __ M/S</h6>
+								<h6>Humidity: __%</h6>
+							</li>
+							<li class="card">
+								<h3>( ______ )</h3>
+								<h6>Temp: __C</h6>
+								<h6>Wind: __ M/S</h6>
+								<h6>Humidity: __%</h6>
+							</li>
+							<li class="card">
+								<h3>( ______ )</h3>
+								<h6>Temp: __C</h6>
+								<h6>Wind: __ M/S</h6>
+								<h6>Humidity: __%</h6>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/lib/sweetalert2.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+
+</html>

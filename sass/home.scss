@@ -1,0 +1,25 @@
+@import "sass/Lang/En";
+@import "sass/Mode/Dark";
+
+@import "sass/Helpers/Variables";
+@import "sass/Helpers/Mixins";
+@import "sass/Helpers/Extend";
+@import "sass/Helpers/Functions";
+
+
+@import "sass/Layout/Fonts";
+@import "sass/Layout/Grid";
+@import "sass/Layout/Scroll";
+@import "sass/Layout/UpArrow";
+
+@import "sass/Layout/Style4AllElement";
+
+@import "sass/Components/Alert";
+@import "sass/Components/Button";
+
+@import "sass/Layout/Nav";
+@import "sass/Pages/Home";
+@import "sass/Layout/Footer";
+
+//sass --watch A:\JavaScript_Games_And_App\Weather_App\sass:A:\JavaScript_Games_And_App\Weather_App\css
+//sass --watch A:\JavaScript_Games_And_App\Weather_App\sass:A:\JavaScript_Games_And_App\Weather_App\css --style compressed

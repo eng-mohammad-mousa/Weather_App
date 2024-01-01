@@ -1,0 +1,39 @@
+$bk-scroll : #fff;
+$sc-color : $mc2;
+
+html {
+    scroll-behavior: smooth;
+}
+
+// For Fire Fox 
+*,
+:root {
+    scrollbar-color: $sc-color $bk-scroll;
+    scrollbar-width: thin;
+}
+
+// For Chrome And Opera
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $bk-scroll;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 15px;
+    background-color: $sc-color;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($sc-color, 0.75);
+    border: 1.2px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+}

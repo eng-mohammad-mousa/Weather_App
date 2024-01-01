@@ -1,0 +1,13 @@
+@mixin box-shadow($num, $blur , $color) {
+    box-shadow: $num $num $blur $color ,
+                $num*-1 $num $blur $color ,
+                $num $num*-1 $blur $color ,
+                $num*-1 $num*-1 $blur $color ;
+}
+
+@mixin text-shadow($num, $blur , $color) {
+    text-shadow: $num $num $blur $color ,
+                $num*-1 $num $blur $color ,
+                $num $num*-1 $blur $color ,
+                $num*-1 $num*-1 $blur $color ;
+}
