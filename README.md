@@ -1,9 +1,13 @@
 <h1><img src="img/logo.png" alt="logo" width="27" height="27"> Weather Forecast App</h1>
 
 A weather app that allows users to get the forecast by entering a city name or using the `Use Current Location` button.
-It provides information on temperature, wind speed, humidity, and more.
-The app offers a 5-day forecast for the entered city. 
+<br>
 Built using TypeScript and styled with SCSS.
+<br>
+It provides information on temperature, wind speed, humidity, and more.
+<br>
+The app offers a 5-day forecast for the entered city. 
+
 
 <br>
 
