@@ -34,7 +34,7 @@ The app offers a 5-day forecast for the entered city.
 
 ## Installation
 
-Follow the steps below to run the Snake Game project:
+Follow the steps below to to get the weather forecast:
 
 1. Download or clone the project from the GitHub repository:
    ```
