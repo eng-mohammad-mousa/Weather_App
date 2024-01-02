@@ -5,7 +5,7 @@ div:where(.swal2-container) h2:where(.swal2-title){
     font-size: 1.45rem !important;
 }
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    background: linear-gradient(to bottom, $mc, $mc2);
+    background: linear-gradient(to bottom, $mc, $mc2) !important;
     padding-left: 30px;
     padding-right: 30px;
     font-weight: bold;
@@ -16,6 +16,5 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 
     &:hover {
         @extend .hvr-wobble-skew;
-        background: linear-gradient(to bottom, $mc, $mc2) !important;
     }
 }
