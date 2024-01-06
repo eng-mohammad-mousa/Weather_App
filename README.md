@@ -8,6 +8,10 @@ It provides information on temperature, wind speed, humidity, and more.
 <br>
 The app offers a 5-day forecast for the entered city. 
 
+<br>
+
+## Live Demo
+Experience the Weather Forecast App live by visiting the following link: [Live Demo](https://eng-mohammad-mousa.github.io/Weather_App/)
 
 <br>
 
